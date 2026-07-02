@@ -249,6 +249,15 @@ a:focus-visible {
   padding-top: 18px;
 }
 
+.hero-kicker {
+  margin: 0 0 18px;
+  color: #d6b278;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,
@@ -265,9 +274,14 @@ h2 {
 }
 
 h1 {
-  max-width: 720px;
-  margin-bottom: 24px;
-  font-size: clamp(3.7rem, 5.8vw, 6.25rem);
+  max-width: 680px;
+  margin-bottom: 26px;
+  font-size: clamp(3.3rem, 5.15vw, 5.65rem);
+}
+
+h1 span {
+  display: block;
+  max-width: 620px;
 }
 
 h1 span,
@@ -281,10 +295,10 @@ h2 {
 }
 
 .hero-text {
-  max-width: 530px;
+  max-width: 610px;
   margin-bottom: 28px;
-  color: rgba(250, 248, 244, 0.84);
-  font-size: 1.06rem;
+  color: rgba(250, 248, 244, 0.88);
+  font-size: clamp(1.02rem, 1.2vw, 1.18rem);
 }
 
 .hero-actions {
@@ -452,6 +466,43 @@ h2 {
   background: rgba(58, 42, 29, 0.24);
 }
 
+.sheet-label {
+  margin: -8px 0 18px;
+  color: rgba(58, 42, 29, 0.52);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.process-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(58, 42, 29, 0.12);
+  color: var(--brown);
+}
+
+.process-row span {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.process-row i {
+  min-width: 72px;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid rgba(176, 141, 87, 0.42);
+  border-radius: 999px;
+  padding: 4px 8px;
+  color: rgba(58, 42, 29, 0.7);
+  font-size: 0.66rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
 .mini-card {
   position: absolute;
   display: grid;
@@ -474,15 +525,15 @@ h2 {
 }
 
 .card-one {
-  left: 230px;
-  top: 165px;
+  left: 198px;
+  top: 214px;
   transform: rotate(11deg);
   animation: cardOneSettle 820ms var(--ease) 520ms forwards;
 }
 
 .card-two {
-  left: 278px;
-  bottom: 120px;
+  left: 318px;
+  bottom: 108px;
   transform: rotate(-7deg);
   animation: cardTwoSettle 820ms var(--ease) 620ms forwards;
 }
@@ -1046,11 +1097,11 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(3.05rem, 13vw, 4.5rem);
+    font-size: clamp(2.95rem, 12vw, 4.12rem);
   }
 
   .hero-text {
-    font-size: 0.98rem;
+    font-size: 1rem;
   }
 
   .hero-actions {
@@ -1096,14 +1147,34 @@ h2 {
     right: 2px;
     top: 44px;
     width: 190px;
-    height: 160px;
-    padding: 24px 20px;
+    height: 184px;
+    padding: 20px 18px;
   }
 
   .sheet-icon {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 18px;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .sheet-label {
+    margin-bottom: 8px;
+    font-size: 0.56rem;
+  }
+
+  .process-row {
+    gap: 8px;
+    padding: 7px 0;
+  }
+
+  .process-row span {
+    font-size: 0.68rem;
+  }
+
+  .process-row i {
+    min-width: 52px;
+    padding: 3px 6px;
+    font-size: 0.52rem;
   }
 
   .check-row {
@@ -1122,13 +1193,13 @@ h2 {
   }
 
   .card-one {
-    left: 142px;
-    top: 94px;
+    left: 114px;
+    top: 126px;
   }
 
   .card-two {
-    left: 152px;
-    bottom: 48px;
+    left: 164px;
+    bottom: 42px;
   }
 
   .note-card {
